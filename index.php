@@ -94,8 +94,8 @@
                                                     <span id="as-accordion-label-id0" class="as-accordion-title">
                                                         <span class="as-search-accordion-title">Marca</span>
                                                     </span>
-                                                    <span id="as-accordion-label-id0" class="as-accordion-title">
-                                                        <span class="as-search-accordion-title">Marca</span>
+                                                    <span class="icon icon-plus as-accordion-plusicon">
+                                                        <span class="a11y">Marca</span>
                                                     </span>
                                                 </button>
                                             </div>
