@@ -26,7 +26,7 @@
         $preference->items = array($item);
         $preference->save();
         
-        echo $preference['id'];
+        //echo $preference['id'];
  ?>
 
 <!DOCTYPE html>
@@ -549,7 +549,7 @@
         // Inicializa el checkout
         mp.checkout({
             preference: {
-                id: '<?php $preference->id; ?>'
+                id: '681067803-b136b327-d952-43f7-b35d-99524351c040'
             },
             render: {
                 container: '.mercadopago-button' // Indica dónde se mostrará el botón de pago
