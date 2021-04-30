@@ -9,10 +9,10 @@
         $preference = new MercadoPago\Preference();
         $preference->back_urls = array(
             "success" => "./success.php",
-            "failure" => "http://www.tu-sitio/failure",
-            "pending" => "http://www.tu-sitio/pending"
+            "failure" => "./failure.php",
+            "pending" => "./pending.php"
         );
-        //$preference->auto_return = "approved";
+        $preference->auto_return = "approved";
 
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
