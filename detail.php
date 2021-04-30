@@ -11,17 +11,17 @@
             "failure" => "http://www.tu-sitio/failure",
             "pending" => "http://www.tu-sitio/pending"
         );*/
-        $preference->auto_return = "approved";
+        //$preference->auto_return = "approved";
 
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
         $item->id = "1234";
-        $item->title = $_POST['title'];
+        $item->title = "Samsung";//$_POST['title'];
         $item->description = "Dispositivo móvil de Tienda e-commerce";
         $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
         //$item->picture_url = $_POST['img'];
         $item->quantity = 1;//$_POST['unit'];
-        $item->currency_id = "COP";
+        //$item->currency_id = "COP";
         $item->unit_price = 100;//$_POST['price'];
         $preference->items = array($item);
         $preference->save();
