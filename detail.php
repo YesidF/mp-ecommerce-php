@@ -1,3 +1,32 @@
+ <?php
+        // SDK de Mercado Pago
+        require __DIR__ .  '/vendor/autoload.php';
+        // Agrega credenciales
+        MercadoPago\SDK::setAccessToken('APP_USR-2572771298846850-120119-a50dbddca35ac9b7e15118d47b111b5a-681067803');
+        
+         // Crea un objeto de preferencia
+        $preference = new MercadoPago\Preference();
+        /*$preference->back_urls = array(
+            "success" => "https://www.tu-sitio/success",
+            "failure" => "http://www.tu-sitio/failure",
+            "pending" => "http://www.tu-sitio/pending"
+        );*/
+        $preference->auto_return = "approved";
+
+        // Crea un ítem en la preferencia
+        $item = new MercadoPago\Item();
+        $item->id = "1234";
+        $item->title = $_POST['title'];
+        $item->description = "Dispositivo móvil de Tienda e-commerce";
+        $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
+        //$item->picture_url = $_POST['img'];
+        $item->quantity = 1;//$_POST['unit'];
+        $item->currency_id = "COP";
+        $item->unit_price = 100;//$_POST['price'];
+        $preference->items = array($item);
+        $preference->save();
+ ?>
+
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US">
     <head>
@@ -435,7 +464,7 @@
                                                 <?php echo "$" . $_POST['unit'] ?>
                                             </h3>
                                         </div>
-                                        <button type="submit" class="mercadopago-button" formmethod="post"></button>
+                                        <!-- <button type="submit" class="mercadopago-button" formmethod="post"></button> -->
                                     </div>
                                 </div>
                             </div>
@@ -487,35 +516,6 @@
     </body>
     
     <?php
-        // SDK de Mercado Pago
-        require __DIR__ .  '/vendor/autoload.php';
-        // Agrega credenciales
-        MercadoPago\SDK::setAccessToken('APP_USR-2572771298846850-120119-a50dbddca35ac9b7e15118d47b111b5a-681067803');
-        
-        
-        // Crea un objeto de preferencia
-        $preference = new MercadoPago\Preference();
-        /*$preference->back_urls = array(
-            "success" => "https://www.tu-sitio/success",
-            "failure" => "http://www.tu-sitio/failure",
-            "pending" => "http://www.tu-sitio/pending"
-        );*/
-        $preference->auto_return = "approved";
-
-        // Crea un ítem en la preferencia
-        $item = new MercadoPago\Item();
-        $item->id = "1234";
-        $item->title = $_POST['title'];
-        $item->description = "Dispositivo móvil de Tienda e-commerce";
-        $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
-        //$item->picture_url = $_POST['img'];
-        $item->quantity = 1;//$_POST['unit'];
-        $item->currency_id = "COP";
-        $item->unit_price = 100;//$_POST['price'];
-        $preference->items = array($item);
-        $preference->save();
-        
-        
         $payer = new MercadoPago\Payer();
         $payer->name = "Lalo Landa";
         $payer->surname = "Luevano";
@@ -536,12 +536,6 @@
           "street_number" => 1602,
           "zip_code" => "03940"
         );
-        
-         $response = array(
-            'id' => $preference->id,
-        ); 
-        echo json_encode($response);
-        
     ?>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script>
@@ -553,7 +547,7 @@
         // Inicializa el checkout
         mp.checkout({
             preference: {
-                id: 'dev_24c65fb163bf11ea96500242ac130004'
+                id: '<?php echo $preference->id;?>'
             },
             render: {
                 container: '.mercadopago-button' // Indica dónde se mostrará el botón de pago
