@@ -435,7 +435,6 @@
                                             </h3>
                                         </div>
                                         <button type="submit" class="mercadopago-button" formmethod="post"></button>
-                                        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                                     </div>
                                 </div>
                             </div>
