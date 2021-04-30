@@ -8,9 +8,9 @@
          // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
         $preference->back_urls = array(
-            "success" => "./success.php",
-            "failure" => "./failure.php",
-            "pending" => "./pending.php"
+            "success" => __DIR__ ."/success.php",
+            "failure" => __DIR__ ."/failure.php",
+            "pending" => __DIR__ ."/pending.php"
         );
         $preference->auto_return = "approved";
 
@@ -20,7 +20,7 @@
         $item->title = $_POST['title'];
         $item->description = "Dispositivo móvil de Tienda e-commerce";
         $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
-        $item->picture_url = $_POST['img'];
+        $item->picture_url = __DIR__ . $_POST['img'];
         $item->quantity = $_POST['unit'];
         $item->currency_id = "COP";
         $item->unit_price = $_POST['price'];
