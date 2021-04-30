@@ -26,7 +26,7 @@
         $preference->items = array($item);
         $preference->save();
         
-        echo $preference->get($id);
+        echo $preference['id'];
  ?>
 
 <!DOCTYPE html>
