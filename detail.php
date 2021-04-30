@@ -25,6 +25,8 @@
         $item->unit_price = 100;//$_POST['price'];
         $preference->items = array($item);
         $preference->save();
+        
+        echo var_dump($preference);
  ?>
 
 <!DOCTYPE html>
