@@ -1,5 +1,4 @@
  <?php
-        echo __DIR__;
         // SDK de Mercado Pago
         require __DIR__ .  '/vendor/autoload.php';
         // Agrega credenciales
@@ -13,7 +12,17 @@
             "failure" => "https://dyfe2008-mp-commerce-php.herokuapp.com/failure.php",
             "pending" => "https://dyfe2008-mp-commerce-php.herokuapp.com/pending.php"
         );
-        //$preference->auto_return = "approved";
+        $preference->auto_return = "approved";
+        
+        $preference->payment_methods = array(
+            "excluded_payment_methods" => array(
+              array("id" => "amex")
+            ),
+            "excluded_payment_types" => array(
+              array("id" => "atm")
+            ),
+            "installments" => 6
+        );
 
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
