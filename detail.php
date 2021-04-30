@@ -1,4 +1,5 @@
  <?php
+        echo __DIR__;
         // SDK de Mercado Pago
         require __DIR__ .  '/vendor/autoload.php';
         // Agrega credenciales
@@ -9,8 +10,8 @@
         $preference = new MercadoPago\Preference();
         $preference->back_urls = array(
             "success" => "https://dyfe2008-mp-commerce-php.herokuapp.com/success.php",
-            "failure" => __DIR__ ."/failure.php",
-            "pending" => __DIR__ ."/pending.php"
+            "failure" => "https://dyfe2008-mp-commerce-php.herokuapp.com/failure.php",
+            "pending" => "https://dyfe2008-mp-commerce-php.herokuapp.com/pending.php"
         );
         //$preference->auto_return = "approved";
 
