@@ -8,11 +8,11 @@
          // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
         $preference->back_urls = array(
-            "success" => __DIR__ ."/success.php",
+            "success" => "https://dyfe2008-mp-commerce-php.herokuapp.com/success.php",
             "failure" => __DIR__ ."/failure.php",
             "pending" => __DIR__ ."/pending.php"
         );
-        $preference->auto_return = "approved";
+        //$preference->auto_return = "approved";
 
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
