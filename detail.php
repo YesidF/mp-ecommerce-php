@@ -10,9 +10,10 @@
         <meta name="format-detection" content="telephone=no">
 
         <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
 
         <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
@@ -494,11 +495,11 @@
         
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
-        $preference->back_urls = array(
+        /*$preference->back_urls = array(
             "success" => "https://www.tu-sitio/success",
             "failure" => "http://www.tu-sitio/failure",
             "pending" => "http://www.tu-sitio/pending"
-        );
+        );*/
         $preference->auto_return = "approved";
 
         // Crea un ítem en la preferencia
@@ -536,6 +537,10 @@
           "zip_code" => "03940"
         );
         
+         $response = array(
+            'id' => $preference->id,
+        ); 
+        echo json_encode($response);
         
     ?>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
