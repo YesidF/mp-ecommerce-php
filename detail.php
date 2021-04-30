@@ -435,6 +435,7 @@
                                             </h3>
                                         </div>
                                         <button type="submit" class="mercadopago-button" formmethod="post"></button>
+                                        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                                     </div>
                                 </div>
                             </div>
@@ -497,9 +498,12 @@
 
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
+        $item->id = "1234";
         $item->title = $_POST['title'];
-        
+        $item->description = "Dispositivo móvil de Tienda e-commerce";
+        $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
         $item->quantity = $_POST['unit'];
+        $item->currency_id = "COP";
         $item->unit_price = $_POST['price'];
         $preference->items = array($item);
         $preference->save();
