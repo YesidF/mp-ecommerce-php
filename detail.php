@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US">
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
         <meta name="viewport" content="width=1024">
         <title>Tienda e-commerce</title>
@@ -395,36 +396,24 @@
                                                 Smartphones
                                             </h2>
                                         </button>
-
-
                                     </div>
-
                                 </div>
                             </div>
                             <div class="as-accessories-results  as-search-desktop">
                                 <div class="width:60%">
                                     <div class="as-producttile-tilehero with-paddlenav " style="float:left;">
                                         <div class="as-dummy-container as-dummy-img">
-
                                             <img src="./assets/wireless-headphones" class="ir ir item-image as-producttile-image  " style="max-width: 70%;max-height: 70%;"alt="" width="445" height="445">
                                         </div>
                                         <div class="images mini-gallery gal5 ">
-
-
                                             <div class="as-isdesktop with-paddlenav with-paddlenav-onhover">
                                                 <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
                                                         <img src="./assets/003.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
                                                     </div>
-
                                                 </div>
-
-
                                             </div>
-
-
-
                                         </div>
 
                                     </div>
@@ -495,4 +484,43 @@
     </div>
     <div id="ac-gn-viewport-emitter"> </div>
     </body>
+    
+    <?php
+        // SDK de Mercado Pago
+        require __DIR__ .  '/vendor/autoload.php';
+        // Agrega credenciales
+        MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+        
+        
+        // Crea un objeto de preferencia
+        $preference = new MercadoPago\Preference();
+
+        // Crea un ítem en la preferencia
+        $item = new MercadoPago\Item();
+        $item->title = $_POST['title'];
+        
+        $item->quantity = $_POST['unit'];
+        $item->unit_price = $_POST['price'];
+        $preference->items = array($item);
+        $preference->save();
+    ?>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+        // Agrega credenciales de SDK
+        const mp = new MercadoPago('APP_USR-a98b17ae-47a6-4a35-b92d-01919002b97e', {
+              locale: 'es-CO'
+        });
+
+        // Inicializa el checkout
+        mp.checkout({
+            preference: {
+                id: 'dev_24c65fb163bf11ea96500242ac130004'
+            },
+            render: {
+                container: '.mercadopago-button', // Indica dónde se mostrará el botón de pago
+                label: 'Pagar', // Cambia el texto del botón de pago (opcional)
+            }
+        });
+    </script>
+
 </html>
