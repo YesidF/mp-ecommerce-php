@@ -16,7 +16,7 @@
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
         $item->id = "1234";
-        $item->title = "Samsung";//$_POST['title'];
+        $item->title = $_POST['title'];
         $item->description = "Dispositivo móvil de Tienda e-commerce";
         $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
         $item->picture_url = $_POST['img'];
@@ -467,7 +467,7 @@
                                             </h3>
                                         </div>
                                         <!-- <button type="submit" class="mercadopago-button" formmethod="post"></button> -->
-                                        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+                                        <a class="pagarMP" href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                                     </div>
                                 </div>
                             </div>
@@ -541,6 +541,7 @@
         );
     ?>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
     <script>
         // Agrega credenciales de SDK
         const mp = new MercadoPago('APP_USR-a98b17ae-47a6-4a35-b92d-01919002b97e', {
@@ -553,8 +554,8 @@
                 id: '681067803-b136b327-d952-43f7-b35d-99524351c040'
             },
             render: {
-                container: '.mercadopago-button' // Indica dónde se mostrará el botón de pago
-                //label: 'Pagar', // Cambia el texto del botón de pago (opcional)
+                container: '.pagarMP' // Indica dónde se mostrará el botón de pago
+                label: 'Pagar la compra', // Cambia el texto del botón de pago (opcional)
             }
         });
     </script>
