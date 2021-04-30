@@ -517,8 +517,8 @@
                 id: 'dev_24c65fb163bf11ea96500242ac130004'
             },
             render: {
-                container: '.mercadopago-button', // Indica dónde se mostrará el botón de pago
-                label: 'Pagar', // Cambia el texto del botón de pago (opcional)
+                container: '.mercadopago-button' // Indica dónde se mostrará el botón de pago
+                //label: 'Pagar', // Cambia el texto del botón de pago (opcional)
             }
         });
     </script>
