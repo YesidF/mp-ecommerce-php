@@ -494,6 +494,12 @@
         
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
+        $preference->back_urls = array(
+            "success" => "https://www.tu-sitio/success",
+            "failure" => "http://www.tu-sitio/failure",
+            "pending" => "http://www.tu-sitio/pending"
+        );
+        $preference->auto_return = "approved";
 
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
@@ -507,6 +513,30 @@
         $item->unit_price = 100;//$_POST['price'];
         $preference->items = array($item);
         $preference->save();
+        
+        
+        $payer = new MercadoPago\Payer();
+        $payer->name = "Lalo Landa";
+        $payer->surname = "Luevano";
+        $payer->email = "test_user_83958037@testuser.com";
+        //$payer->date_created = "2018-06-02T12:58:41.425-04:00";
+        $payer->phone = array(
+          "area_code" => "52",
+          "number" => "5549737300"
+        );
+
+        /*$payer->identification = array(
+          "type" => "DNI",
+          "number" => "12345678"
+        );*/
+
+        $payer->address = array(
+          "street_name" => "Insurgentes Sur",
+          "street_number" => 1602,
+          "zip_code" => "03940"
+        );
+        
+        
     ?>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script>
