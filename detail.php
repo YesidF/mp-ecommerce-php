@@ -26,9 +26,7 @@
         $preference->items = array($item);
         
         $preference->save();
-        $IDp=$preference->get($id);
-        //echo $preference['id'];
-        echo var_dump($IDp);
+        
  ?>
 
 <!DOCTYPE html>
@@ -468,7 +466,8 @@
                                                 <?php echo "$" . $_POST['unit'] ?>
                                             </h3>
                                         </div>
-                                        <button type="submit" class="mercadopago-button" formmethod="post"></button>
+                                        <!-- <button type="submit" class="mercadopago-button" formmethod="post"></button> -->
+                                        <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                                     </div>
                                 </div>
                             </div>
