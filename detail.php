@@ -19,14 +19,16 @@
         $item->title = "Samsung";//$_POST['title'];
         $item->description = "Dispositivo móvil de Tienda e-commerce";
         $item->category_id = "phones"; //existe una lista predeterminada en la docuentación si no está tu categoría colocar others
-        //$item->picture_url = $_POST['img'];
-        $item->quantity = 1;//$_POST['unit'];
-        //$item->currency_id = "COP";
-        $item->unit_price = 100;//$_POST['price'];
+        $item->picture_url = $_POST['img'];
+        $item->quantity = $_POST['unit'];
+        $item->currency_id = "COP";
+        $item->unit_price = $_POST['price'];
         $preference->items = array($item);
-        $preference->save();
         
+        $preference->save();
+        $IDp=$preference->get($id);
         //echo $preference['id'];
+        echo var_dump($IDp);
  ?>
 
 <!DOCTYPE html>
