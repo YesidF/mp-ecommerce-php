@@ -23,7 +23,9 @@
             ),
             "installments" => 6
         );
-
+        
+        $preference->external_reference ="dorianyesid09@hotmail.com";
+                
         // Crea un ítem en la preferencia
         $item = new MercadoPago\Item();
         $item->id = "1234";
