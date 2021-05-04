@@ -38,8 +38,29 @@
         $item->unit_price = $_POST['price'];
         $preference->items = array($item);
         
-        $preference->save();
+        $payer = new MercadoPago\Payer();
+        $payer->name = "Lalo Landa";
+        $payer->surname = "Luevano";
+        $payer->email = "test_user_83958037@testuser.com";
+        //$payer->date_created = "2018-06-02T12:58:41.425-04:00";
+        $payer->phone = array(
+          "area_code" => "52",
+          "number" => "5549737300"
+        );
+
+        $payer->identification = array(
+          "type" => "DNI",
+          "number" => "12345678"
+        );
+
+        $payer->address = array(
+          "street_name" => "Insurgentes Sur",
+          "street_number" => 1602,
+          "zip_code" => "03940"
+        );
         
+        $preference->payer = $payer;
+        $preference->save();
  ?>
 
 <!DOCTYPE html>
@@ -530,29 +551,7 @@
     </div>
     <div id="ac-gn-viewport-emitter"> </div>
     </body>
-    
-    <?php
-        $payer = new MercadoPago\Payer();
-        $payer->name = "Lalo Landa";
-        $payer->surname = "Luevano";
-        $payer->email = "test_user_83958037@testuser.com";
-        //$payer->date_created = "2018-06-02T12:58:41.425-04:00";
-        $payer->phone = array(
-          "area_code" => "52",
-          "number" => "5549737300"
-        );
 
-        /*$payer->identification = array(
-          "type" => "DNI",
-          "number" => "12345678"
-        );*/
-
-        $payer->address = array(
-          "street_name" => "Insurgentes Sur",
-          "street_number" => 1602,
-          "zip_code" => "03940"
-        );
-    ?>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
     <script>
