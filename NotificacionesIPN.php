@@ -4,7 +4,6 @@
     crossorigin="anonymous">
 </script>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
-<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 <?php
 
     // SDK de Mercado Pago
