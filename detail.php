@@ -554,7 +554,6 @@
     </div>
     <div id="ac-gn-viewport-emitter"> </div>
     <?php echo var_dump($preference->id);
-    echo 'Preference'.$preference->id;
     ?>
     </body>
 
