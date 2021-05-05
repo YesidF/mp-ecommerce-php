@@ -8,6 +8,9 @@
     <body>
         <div class="container">
             <div class="row mt-3">
+                <h1>Success</h1>
+            </div>
+            <div class="row mt-3">
                 <div class="alert alert-success" role="alert">
                     <h4 class="alert-heading">Información del pago</h4>
                     <p>La compra ha finalizado correctamente,Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
