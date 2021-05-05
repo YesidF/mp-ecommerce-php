@@ -6,7 +6,7 @@
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 <?php
-    echo "1";
+echo "1";
     // SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
     // Agrega credenciales
@@ -32,6 +32,7 @@ echo "2";
             $paid_amount += $payment['transaction_amount'];
         }
     }
+echo "3";    
 /* 
     // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
     if($paid_amount >= $merchant_order->total_amount){
