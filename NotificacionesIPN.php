@@ -26,7 +26,7 @@
             break;
     }
 
-    $paid_amount = 0;
+    /*$paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {
         if ($payment['status'] == 'approved'){
             $paid_amount += $payment['transaction_amount'];
@@ -45,5 +45,5 @@
     } else {
         print_r("Not paid yet. Do not release your item.");
     }
-    
+    */
     http_response_code(200);
