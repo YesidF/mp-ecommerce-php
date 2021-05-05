@@ -63,7 +63,7 @@
         $preference->notification_url = "https://dyfe2008-mp-commerce-php.herokuapp.com/NotificacionesIPN.php";
         $preference->save();
         
-        echo var_dump($preference);
+        
  ?>
 
 <!DOCTYPE html>
@@ -553,6 +553,7 @@
         </svg>
     </div>
     <div id="ac-gn-viewport-emitter"> </div>
+    <?php echo var_dump($preference);?>
     </body>
 
     <script src="https://sdk.mercadopago.com/js/v2"></script>
