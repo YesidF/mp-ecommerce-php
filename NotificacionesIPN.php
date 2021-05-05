@@ -14,7 +14,7 @@
     MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
     $merchant_order = null;
-    /*    
+       
     switch($_GET["topic"]) {
         case "payment":
             $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
@@ -25,7 +25,7 @@
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
             break;
     }
-
+echo "2";/* 
     $paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {
         if ($payment['status'] == 'approved'){
