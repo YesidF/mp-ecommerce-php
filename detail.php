@@ -429,7 +429,6 @@
     <body class="as-theme-light-heroimage">
 
         <div class="stack">
-
             <div class="as-search-wrapper" role="main">
                 <div class="as-navtuck-wrapper">
                     <div class="as-l-fullwidth  as-navtuck" data-events="event52">
@@ -448,7 +447,6 @@
                     </div>
                 </div>
                 <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
-
                     <div id="accessories-tab" class="as-accessories-details">
                         <div class="as-accessories" id="as-accessories">
                             <div class="as-accessories-header">
@@ -484,7 +482,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="as-producttile-info" style="float:left;min-height: 168px;">
                                         <div class="as-producttile-titlepricewraper" style="min-height: 128px;">
@@ -512,6 +509,7 @@
                     </div>
                 </div>
             </div>
+            
             <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
             <div class="as-footnotes">
                 <div class="as-footnotes-content">
@@ -520,39 +518,39 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
         
-    <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
-        <svg class="mp-spinner" viewBox="25 25 50 50"> 
-            <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
-        </svg> 
-    </div>
-    <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
-        <svg class="mp-spinner" viewBox="25 25 50 50"> 
-            <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
-        </svg> 
-    </div>
-    <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
-        <svg class="mp-spinner" viewBox="25 25 50 50"> 
-            <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
-        </svg>
-    </div>
-    <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
-        <svg class="mp-spinner" viewBox="25 25 50 50"> 
-            <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
-        </svg> 
-    </div>
-    <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
-        <svg class="mp-spinner" viewBox="25 25 50 50"> 
-            <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
-        </svg> 
-    </div>
-    <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
-        <svg class="mp-spinner" viewBox="25 25 50 50"> 
-            <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
-        </svg>
-    </div>
-    <div id="ac-gn-viewport-emitter"> </div>
+        <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
+            <svg class="mp-spinner" viewBox="25 25 50 50"> 
+                <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
+            </svg> 
+        </div>
+        <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
+            <svg class="mp-spinner" viewBox="25 25 50 50"> 
+                <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
+            </svg> 
+        </div>
+        <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
+            <svg class="mp-spinner" viewBox="25 25 50 50"> 
+                <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
+            </svg>
+        </div>
+        <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
+            <svg class="mp-spinner" viewBox="25 25 50 50"> 
+                <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
+            </svg> 
+        </div>
+        <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
+            <svg class="mp-spinner" viewBox="25 25 50 50"> 
+                <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
+            </svg> 
+        </div>
+        <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> 
+            <svg class="mp-spinner" viewBox="25 25 50 50"> 
+                <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> 
+            </svg>
+        </div>
+        <div id="ac-gn-viewport-emitter"> </div>
     </body>
 
     <script src="https://sdk.mercadopago.com/js/v2"></script>
