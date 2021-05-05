@@ -14,7 +14,7 @@
                     <p>La compra ha finalizado correctamente,Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
                     <hr>
                     <h6 class="alert-heading">Información Query String</h6>
-                    <p class="mb-0"><span class="">collection_id:</span></p>
+                    <p class="mb-0"><span class="fw-bold">collection_id:</span><?php $_GET['collection_id']?$_GET['collection_id']:'No disponible' ?></p>
                     collection_status=approved
                         external_reference=[EXTERNAL_REFERENCE]
                         payment_type=credit_card
