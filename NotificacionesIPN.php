@@ -20,7 +20,7 @@
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
             break;
         case "merchant_order":
-            //$merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
+            $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
             break;
     }
 
