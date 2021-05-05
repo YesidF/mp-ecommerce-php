@@ -7,11 +7,22 @@
     </head>
     <body>
         <div class="container">
-            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                <div class="card-header">Proceso de pago</div>
-                <div class="card-body">
-                  <h5 class="card-title">La compra ha finalizado correctamente</h5>
-                  <p class="card-text">Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico</p>
+            <div class="row">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Información del pago</h4>
+                    <p>La compra ha finalizado correctamente,Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
+                    <hr>
+                    <h3 class="alert-heading">Información Query String</h3>
+                    <p class="mb-0">
+                        collection_id=[PAYMENT_ID]
+                        collection_status=approved
+                        external_reference=[EXTERNAL_REFERENCE]
+                        payment_type=credit_card
+                        preference_id=[PREFERENCE_ID]
+                        site_id=[SITE_ID]
+                        processing_mode=aggregator
+                        merchant_account_id=null
+                    </p>
                 </div>
             </div>
         </div>
