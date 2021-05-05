@@ -7,7 +7,13 @@
     MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
     $merchant_order = null;
-
+    
+    if ($_GET){
+        echo 'GET';
+    }else{
+        echo 'post';
+    }
+        
     /*switch($_GET["topic"]) {
         case "payment":
             $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
