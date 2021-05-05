@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <div class="row mt-3">
-                <h1 class="text-center text-success">Pending</h1>
+                <h1 class="text-center text-warning">Pending</h1>
             </div>
             <div class="row mt-3">
                 <div class="d-grid gap-2 col-6 mx-auto">
