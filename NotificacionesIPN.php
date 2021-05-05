@@ -24,7 +24,8 @@
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
             break;
     }
-//echo var_dump($payment);
+    $array = json_decode( json_encode( $payment ), true );
+echo var_dump($array);
     $paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {
         echo $payment->status;
