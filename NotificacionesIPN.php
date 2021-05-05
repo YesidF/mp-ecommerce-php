@@ -26,8 +26,9 @@
     }
     $array = json_decode( json_encode( $payment ), true );
     $array2 = (array) $payment;
-echo var_dump($array);
+//echo var_dump($array);
 echo var_dump($array2);
+echo $array2['*status'];
     $paid_amount = 0;
     /*foreach ($merchant_order->payments as $payment) {
         echo $payment->status;
