@@ -4,16 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> 
+        <title>Success</title>
     </head>
     <body>
         <div class="container">
             <div class="row mt-3">
-                <h1>Success</h1>
+                <h1 class="text-center text-success">Success</h1>
             </div>
             <div class="row mt-3">
                 <div class="alert alert-success" role="alert">
                     <h4 class="alert-heading">Información del pago</h4>
-                    <p>La compra ha finalizado correctamente,Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
+                    <p>La compra ha finalizado correctamente, hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
                     <hr>
                     <h5 class="alert-heading">Información Query String</h5>
                     <p class="mb-0"><span class="fw-bold">collection_id:</span><?php echo $_GET['collection_id']?></p>
@@ -29,6 +30,11 @@
                     <p class="mb-0"><span class="fw-bold">merchant_account_id:</span><?php echo $_GET['merchant_account_id']?></p>
                 </div>
             </div>
+            
+            <div class="row mt-3">
+                <a class="btn btn-secondary" href="./index.php" role="button">Regresar a la página principal</a>
+            </div>
+            
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
