@@ -553,7 +553,7 @@
         </svg>
     </div>
     <div id="ac-gn-viewport-emitter"> </div>
-    <?php echo 'as '.var_dump($preference);?>
+    <?php echo 'as '.var_dump($preference->id);?>
     </body>
 
     <script src="https://sdk.mercadopago.com/js/v2"></script>
