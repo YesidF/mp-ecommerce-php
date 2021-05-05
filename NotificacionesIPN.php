@@ -1,8 +1,8 @@
 <?php
 
-   /* // SDK de Mercado Pago
+    // SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
-    // Agrega credenciales
+    /*// Agrega credenciales
     MercadoPago\SDK::setAccessToken('APP_USR-2572771298846850-120119-a50dbddca35ac9b7e15118d47b111b5a-681067803');
     MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
