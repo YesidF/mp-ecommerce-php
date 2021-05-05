@@ -12,13 +12,22 @@
                 <h1 class="text-center text-success">Failure</h1>
             </div>
             <div class="row mt-3">
-                <div class="alert alert-warning" role="alert">
-                    <h4 class="alert-heading">Información del pago</h4>
-                    <p>Ha ocurrido un error en la compra, tu pado ha sido rechzado</p>
-                    <hr>
-                    <h5 class="alert-heading">Información Query String</h5>
+                <div class="row mt-3">
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">Información del pago</h4>
+                        <p>Ha ocurrido un error en la compra, tu pado ha sido rechzado</p>
+                        <hr>
+                        <h5 class="alert-heading">Información Query String</h5>
+                    </div>
                 </div>
             </div>
+            
+            <div class="row mt-3">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-secondary" href="./index.php" role="button">Regresar a la página principal</a>
+                </div>
+            </div>
+            
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
