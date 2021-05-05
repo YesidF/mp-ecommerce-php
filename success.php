@@ -32,7 +32,9 @@
             </div>
             
             <div class="row mt-3">
-                <a class="btn btn-secondary" href="./index.php" role="button">Regresar a la página principal</a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-secondary" href="./index.php" role="button">Regresar a la página principal</a>
+                </div>
             </div>
             
         </div>
