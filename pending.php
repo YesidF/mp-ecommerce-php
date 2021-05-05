@@ -12,11 +12,19 @@
                 <h1 class="text-center text-success">Pending</h1>
             </div>
             <div class="row mt-3">
-                <div class="alert alert-warning" role="alert">
-                    <h4 class="alert-heading">Información del pago</h4>
-                    <p>La compra ha finalizado correctamente y está en pendiende de pago, el producto será despachado en una vez verifiquemos tu pago y serás notificado por correo electrónico.</p>
-                    <hr>
-                    <h5 class="alert-heading">Información Query String</h5>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">Información del pago</h4>
+                        <p>La compra ha finalizado correctamente y está en pendiende de pago, el producto será despachado en una vez verifiquemos tu pago y serás notificado por correo electrónico.</p>
+                        <hr>
+                        <h5 class="alert-heading">Información Query String</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-secondary" href="./index.php" role="button">Regresar a la página principal</a>
                 </div>
             </div>
         </div>
