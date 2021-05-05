@@ -28,6 +28,7 @@ echo "1";
 echo "2";
     $paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {
+        echo '2.1';
         if ($payment['status'] == 'approved'){
             $paid_amount += $payment['transaction_amount'];
         }
