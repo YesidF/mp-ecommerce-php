@@ -38,5 +38,5 @@
     } else {
         print_r("Not paid yet. Do not release your item.");
     }
-    
-    http_response_code(200);*/
+    */
+    http_response_code(200);
