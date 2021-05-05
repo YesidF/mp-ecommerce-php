@@ -6,7 +6,7 @@
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 <?php
-
+    echo "1";
     // SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
     // Agrega credenciales
@@ -14,7 +14,7 @@
     MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
     $merchant_order = null;
-        
+    /*    
     switch($_GET["topic"]) {
         case "payment":
             $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
@@ -26,7 +26,7 @@
             break;
     }
 
-    /*$paid_amount = 0;
+    $paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {
         if ($payment['status'] == 'approved'){
             $paid_amount += $payment['transaction_amount'];
