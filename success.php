@@ -5,23 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> 
     </head>
-&collection_status=approved&payment_id=14734201818&status=approved&external_reference=dorianyesid09@hotmail.com&payment_type=account_money&merchant_order_id=2633921333&preference_id=681067803-cfb4510e-b8e2-4118-b9d6-51c06045cc1c&site_id=MCO&processing_mode=aggregator&merchant_account_id=null
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row mt-3">
                 <div class="alert alert-success" role="alert">
                     <h4 class="alert-heading">Información del pago</h4>
                     <p>La compra ha finalizado correctamente,Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
                     <hr>
-                    <h6 class="alert-heading">Información Query String</h6>
+                    <h5 class="alert-heading">Información Query String</h5>
                     <p class="mb-0"><span class="fw-bold">collection_id:</span><?php echo $_GET['collection_id']?></p>
-                    collection_status=approved
-                        external_reference=[EXTERNAL_REFERENCE]
-                        payment_type=credit_card
-                        preference_id=[PREFERENCE_ID]
-                        site_id=[SITE_ID]
-                        processing_mode=aggregator
-                        merchant_account_id=null
+                    <p class="mb-0"><span class="fw-bold">collection_status:</span><?php echo $_GET['collection_status']?></p>
+                    <p class="mb-0"><span class="fw-bold">payment_id:</span><?php echo $_GET['payment_id']?></p>
+                    <p class="mb-0"><span class="fw-bold">status:</span><?php echo $_GET['status']?></p>
+                    <p class="mb-0"><span class="fw-bold">external_reference:</span><?php echo $_GET['external_reference']?></p>
+                    <p class="mb-0"><span class="fw-bold">payment_type:</span><?php echo $_GET['payment_type']?></p>
+                    <p class="mb-0"><span class="fw-bold">merchant_order_id:</span><?php echo $_GET['merchant_order_id']?></p>
+                    <p class="mb-0"><span class="fw-bold">preference_id:</span><?php echo $_GET['preference_id']?></p>
+                    <p class="mb-0"><span class="fw-bold">site_id:</span><?php echo $_GET['site_id']?></p>
+                    <p class="mb-0"><span class="fw-bold">processing_mode:</span><?php echo $_GET['processing_mode']?></p>
+                    <p class="mb-0"><span class="fw-bold">merchant_account_id:</span><?php echo $_GET['merchant_account_id']?></p>
                 </div>
             </div>
         </div>
