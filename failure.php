@@ -9,11 +9,11 @@
     <body>
         <div class="container">
             <div class="row mt-3">
-                <h1 class="text-center text-success">Failure</h1>
+                <h1 class="text-center text-danger">Failure</h1>
             </div>
             <div class="row mt-3">
                 <div class="row mt-3">
-                    <div class="alert alert-warning" role="alert">
+                    <div class="alert alert-danger" role="alert">
                         <h4 class="alert-heading">Información del pago</h4>
                         <p>Ha ocurrido un error en la compra, tu pado ha sido rechzado</p>
                         <hr>
