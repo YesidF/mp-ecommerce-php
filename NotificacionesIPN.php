@@ -33,6 +33,7 @@ echo "2";
             $paid_amount += $payment['transaction_amount'];
             echo '2.1';
         }
+        echo '2,2';
     }
 echo "3";    
  
