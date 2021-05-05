@@ -13,7 +13,7 @@
                     <h4 class="alert-heading">Información del pago</h4>
                     <p>La compra ha finalizado correctamente,Hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
                     <hr>
-                    <h6 class="alert-heading">Información Query String</h6>
+                    <h6 class="alert-heading">Información Query String</h6><?php echo 'sdsad '.$_GET['collection_id']?>
                     <p class="mb-0"><span class="fw-bold">collection_id:</span><?php $_GET['collection_id']?$_GET['collection_id']:'No disponible' ?></p>
                     collection_status=approved
                         external_reference=[EXTERNAL_REFERENCE]
