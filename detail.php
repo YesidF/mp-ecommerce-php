@@ -63,7 +63,7 @@
         $preference->notification_url = "https://dyfe2008-mp-commerce-php.herokuapp.com/NotificacionesIPN.php";
         $preference->save();
         
-        echo 'PREFERENCE_ID:'.$preference['id'];
+        echo var_dump($preference);
  ?>
 
 <!DOCTYPE html>
