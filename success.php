@@ -12,22 +12,24 @@
                 <h1 class="text-center text-success">Success</h1>
             </div>
             <div class="row mt-3">
-                <div class="alert alert-success" role="alert">
-                    <h4 class="alert-heading">Información del pago</h4>
-                    <p>La compra ha finalizado correctamente, hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
-                    <hr>
-                    <h5 class="alert-heading">Información Query String</h5>
-                    <p class="mb-0"><span class="fw-bold">collection_id:</span><?php echo $_GET['collection_id']?></p>
-                    <p class="mb-0"><span class="fw-bold">collection_status:</span><?php echo $_GET['collection_status']?></p>
-                    <p class="mb-0"><span class="fw-bold">payment_id:</span><?php echo $_GET['payment_id']?></p>
-                    <p class="mb-0"><span class="fw-bold">status:</span><?php echo $_GET['status']?></p>
-                    <p class="mb-0"><span class="fw-bold">external_reference:</span><?php echo $_GET['external_reference']?></p>
-                    <p class="mb-0"><span class="fw-bold">payment_type:</span><?php echo $_GET['payment_type']?></p>
-                    <p class="mb-0"><span class="fw-bold">merchant_order_id:</span><?php echo $_GET['merchant_order_id']?></p>
-                    <p class="mb-0"><span class="fw-bold">preference_id:</span><?php echo $_GET['preference_id']?></p>
-                    <p class="mb-0"><span class="fw-bold">site_id:</span><?php echo $_GET['site_id']?></p>
-                    <p class="mb-0"><span class="fw-bold">processing_mode:</span><?php echo $_GET['processing_mode']?></p>
-                    <p class="mb-0"><span class="fw-bold">merchant_account_id:</span><?php echo $_GET['merchant_account_id']?></p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Información del pago</h4>
+                        <p>La compra ha finalizado correctamente, hemos recibido tu pago, el producto será despachado en brevedad y serás notificado por correo electrónico.</p>
+                        <hr>
+                        <h5 class="alert-heading">Información Query String</h5>
+                        <p class="mb-0"><span class="fw-bold">collection_id:</span><?php echo $_GET['collection_id']?></p>
+                        <p class="mb-0"><span class="fw-bold">collection_status:</span><?php echo $_GET['collection_status']?></p>
+                        <p class="mb-0"><span class="fw-bold">payment_id:</span><?php echo $_GET['payment_id']?></p>
+                        <p class="mb-0"><span class="fw-bold">status:</span><?php echo $_GET['status']?></p>
+                        <p class="mb-0"><span class="fw-bold">external_reference:</span><?php echo $_GET['external_reference']?></p>
+                        <p class="mb-0"><span class="fw-bold">payment_type:</span><?php echo $_GET['payment_type']?></p>
+                        <p class="mb-0"><span class="fw-bold">merchant_order_id:</span><?php echo $_GET['merchant_order_id']?></p>
+                        <p class="mb-0"><span class="fw-bold">preference_id:</span><?php echo $_GET['preference_id']?></p>
+                        <p class="mb-0"><span class="fw-bold">site_id:</span><?php echo $_GET['site_id']?></p>
+                        <p class="mb-0"><span class="fw-bold">processing_mode:</span><?php echo $_GET['processing_mode']?></p>
+                        <p class="mb-0"><span class="fw-bold">merchant_account_id:</span><?php echo $_GET['merchant_account_id']?></p>
+                    </div>
                 </div>
             </div>
             
