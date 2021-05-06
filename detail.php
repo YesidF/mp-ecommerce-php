@@ -562,7 +562,7 @@
         // Inicializa el checkout
         mp.checkout({
             preference: {
-                id:<?php echo $preference->id; ?>
+                id:'<?php echo $preference->id; ?>'
             },
             render: {
                 container: '.pagarMP' // Indica dónde se mostrará el botón de pago
