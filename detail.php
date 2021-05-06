@@ -512,7 +512,7 @@
             <div class="as-footnotes">
                 <div class="as-footnotes-content">
                     <div class="as-footnotes-sosumi">
-                        Todos los derechos reservados Tienda Tecno 2019 <?php echo $preference->id ?>
+                        Todos los derechos reservados Tienda Tecno 2019
                     </div>
                 </div>
             </div>
@@ -562,7 +562,7 @@
         // Inicializa el checkout
         mp.checkout({
             preference: {
-                id:'681067803-b136b327-d952-43f7-b35d-99524351c040'
+                id:preferenceId
             },
             render: {
                 container: '.pagarMP' // Indica dónde se mostrará el botón de pago
