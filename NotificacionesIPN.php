@@ -41,7 +41,7 @@ echo "3-";
     // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
     if($paid_amount >= $merchant_order->total_amount){
         echo "4-";
-        echo var_dump(count($merchant_order->shipments));
+        echo var_dump(count((array)$merchant_order->shipments));
         if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
             echo "5-";
             if($merchant_order->shipments[0]->status == "ready_to_ship") {
