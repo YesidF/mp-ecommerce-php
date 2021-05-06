@@ -78,7 +78,7 @@
         </script>
     </head>
     <body>
-        <img src="./assets/music-audio-alp-201709" class="img-fluid" alt="Imagen Tienda e-comerce">
+        <img src="./assets/music-audio-alp-201709" class="img-fluid" max-width="100%" height¨="auto" alt="Imagen Tienda e-comerce">
         <div class="container">
             
         </div>
