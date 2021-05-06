@@ -54,12 +54,15 @@ echo "3-";
         print_r("Not paid yet. Do not release your item.");
         echo "8-";
     }
+    
 $arrayResponse = array(
     'code'=> 200,
-    'Message'=>'IPN Notificaciones Reciviendo'
+    'Message'=>'IPN Notificaciones Reciviendo',
+    'topic'=>$_GET["topic"],
+    'id'=>$_GET["id"]
 );
 
 $myJsonResponse = json_encode($arrayResponse);
 
 echo $myJsonResponse;
-    //http_response_code(200);
+//http_response_code(200);
