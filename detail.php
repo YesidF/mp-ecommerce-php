@@ -85,9 +85,9 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-6 m-2">
-                                <img src='<?php echo $_POST['img']?>' alt="Imagen celular">
+                                <img src='<?php echo $_POST['img']?>' alt="Imagen celular" class="img-thumbnail">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $_POST['title']?></h5>
                                     <p class="card-text"><span class="fw-bold">Cantidad:</span>&nbsp;<?php echo $_POST['unit']?></p>
