@@ -558,11 +558,11 @@
         const mp = new MercadoPago('APP_USR-a98b17ae-47a6-4a35-b92d-01919002b97e', {
               locale: 'es-CO'
         });
-        var preferenceId= <?php echo $preference->id; ?>
+         
         // Inicializa el checkout
         mp.checkout({
             preference: {
-                id:''+preferenceId
+                id:<?php echo $preference->id; ?>
             },
             render: {
                 container: '.pagarMP' // Indica dónde se mostrará el botón de pago
