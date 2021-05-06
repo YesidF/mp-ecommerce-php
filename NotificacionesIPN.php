@@ -43,7 +43,7 @@ echo "3-";
         echo "4-";
         if (count((array)$merchant_order->shipments)>0) { // The merchant_order has shipments
             echo "5-";
-            echo var_dump($merchant_order->shipments[0]);
+            echo var_dump($merchant_order);
             if($merchant_order->shipments[0]->status == "ready_to_ship") {
                 echo "6-";
                 print_r("Totally paid. Print the label and release your item.");
