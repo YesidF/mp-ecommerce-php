@@ -24,13 +24,9 @@
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
             break;
     }
-    $array = json_decode( json_encode( $payment ), true );
-    $array2 = (array) $payment;
-//echo var_dump($array);
-//echo var_dump($array2);
-$mp->get("/v1/payments/".$id);
+
     $paid_amount = 0;
-    /*foreach ($merchant_order->payments as $payment) {
+    foreach ($merchant_order->payments as $payment) {
         echo $payment->status;
         if ($payment['status'] == 'approved'){
             echo '2.0';
@@ -53,5 +49,5 @@ echo "3";
     } else {
         print_r("Not paid yet. Do not release your item.");
     }
-*/
+
     http_response_code(200);
