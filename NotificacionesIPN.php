@@ -24,14 +24,19 @@
             $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
             break;
     }
+    
+    $myJsonResponse = json_encode($payment);
 
+    echo $myJsonResponse;
+    
+/*
     $paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {      
         if ($payment->status == 'approved'){
             $paid_amount += $payment->transaction_amount;
         }
     }    
- /*
+ 
     // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
     if($paid_amount >= $merchant_order->total_amount){
         if (count((array)$merchant_order->shipments)>0) { // The merchant_order has shipments
