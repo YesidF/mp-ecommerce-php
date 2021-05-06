@@ -92,7 +92,7 @@
                                     <h5 class="card-title"><?php echo $_POST['title']?></h5>
                                     <p class="card-text"><span class="fw-bold">Cantidad:</span>&nbsp;<?php echo $_POST['title']?></p>
                                     <p class="card-text"><span class="fw-bold">Precio:</span>&nbsp;$<?php echo $_POST['price']?></p>
-                                    
+                                    <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <a class="btn btn-secondary" href="<?php echo $preference->init_point; ?>" role="button">Comprar con mercado libre</a>
                                 </div>
                             </div>
