@@ -512,7 +512,7 @@
             <div class="as-footnotes">
                 <div class="as-footnotes-content">
                     <div class="as-footnotes-sosumi">
-                        Todos los derechos reservados Tienda Tecno 2019
+                        Todos los derechos reservados Tienda Tecno 2019 <?php $preference->id ?>
                     </div>
                 </div>
             </div>
