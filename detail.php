@@ -562,7 +562,7 @@
         // Inicializa el checkout
         mp.checkout({
             preference: {
-                id: '681067803-b136b327-d952-43f7-b35d-99524351c040'
+                id:'681067803-b136b327-d952-43f7-b35d-99524351c040'
             },
             render: {
                 container: '.pagarMP' // Indica dónde se mostrará el botón de pago
