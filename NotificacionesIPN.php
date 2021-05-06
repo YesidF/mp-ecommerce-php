@@ -31,7 +31,7 @@
             $paid_amount += $payment->transaction_amount;
         }
     }    
- 
+ /*
     // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
     if($paid_amount >= $merchant_order->total_amount){
         if (count((array)$merchant_order->shipments)>0) { // The merchant_order has shipments
@@ -45,7 +45,7 @@
     } else {
         print_r("Not paid yet. Do not release your item.");
     }
-    
+   */ 
 $arrayResponse = array(
     'code'=> 200,
     'Message'=>'IPN Notificaciones Reciviendo',
