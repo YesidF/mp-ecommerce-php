@@ -25,10 +25,6 @@
             break;
     }
     
-    $myJsonResponse = json_encode($payment);
-
-    echo $myJsonResponse;
-    
 /*
     $paid_amount = 0;
     foreach ($merchant_order->payments as $payment) {      
@@ -50,15 +46,5 @@
     } else {
         print_r("Not paid yet. Do not release your item.");
     }
-   
-$arrayResponse = array(
-    'code'=> 200,
-    'Message'=>'IPN Notificaciones Reciviendo',
-    'topic'=>$_GET["topic"],
-    'id'=>$_GET["id"]
-);
-
-$myJsonResponse = json_encode($arrayResponse);
-
-echo $myJsonResponse;*/ 
+*/ 
 //http_response_code(200);
