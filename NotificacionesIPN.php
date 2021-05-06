@@ -45,7 +45,7 @@
     } else {
         print_r("Not paid yet. Do not release your item.");
     }
-   */ 
+   
 $arrayResponse = array(
     'code'=> 200,
     'Message'=>'IPN Notificaciones Reciviendo',
@@ -55,5 +55,5 @@ $arrayResponse = array(
 
 $myJsonResponse = json_encode($arrayResponse);
 
-echo $myJsonResponse;
+echo $myJsonResponse;*/ 
 //http_response_code(200);
