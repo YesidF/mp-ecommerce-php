@@ -26,9 +26,7 @@
     }
 
     $paid_amount = 0;
-    foreach ($merchant_order->payments as $payment) {
-        echo $payment->status;
-        
+    foreach ($merchant_order->payments as $payment) {      
         if ($payment->status == 'approved'){
             echo '-2.0-';
             $paid_amount += $payment->transaction_amount;
@@ -56,5 +54,12 @@ echo "3-";
         print_r("Not paid yet. Do not release your item.");
         echo "8-";
     }
+$arrayResponse = array(
+    'code'=> 200,
+    'Message'=>'IPN Notificaciones Reciviendo'
+);
 
-    http_response_code(200);
+$myJsonResponse = json_encode($arrayResponse);
+
+echo $myJsonResponse;
+    //http_response_code(200);
