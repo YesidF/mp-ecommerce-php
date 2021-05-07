@@ -19,7 +19,7 @@
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/g6-2_2048x.jpg" class="card-img-top" alt="Imagen Celular LG-G6" max-heigth="300">
+                        <img src="./assets/g6-2_2048x.jpg" class="card-img-top" alt="Imagen Celular LG-G6" heigth="600">
                         <div class="card-body">
                             <h5 class="card-title">LG G6</h5>
                             <p class="card-text">Procesador: Qualcomm Snapdragon 821 con cuatro núcleos a 2.35 GHz.</p>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/iphone.png" class="card-img-top" alt="Imagen Celular iphone"max-heigth="300">
+                        <img src="./assets/iphone.png" class="card-img-top" alt="Imagen Celular iphone" heigth="600">
                         <div class="card-body">
                             <h5 class="card-title">Iphone 8</h5>
                             <p class="card-text">Retina HD.</p>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/motorola-moto-g4-3.jpg" class="card-img-top" alt="Imagen Celular Motorola"max-heigth="300">
+                        <img src="./assets/motorola-moto-g4-3.jpg" class="card-img-top" alt="Imagen Celular Motorola" heigth="600">
                         <div class="card-body">
                             <h5 class="card-title">Motorola G4</h5>
                             <p class="card-text">Pantalla: 5.5", 1080 x 1920 pixels.</p>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/motorola-moto-g5-plus-1.jpg" class="card-img-top" alt="Imagen Celular Motorola"max-heigth="300">
+                        <img src="./assets/motorola-moto-g5-plus-1.jpg" class="card-img-top" alt="Imagen Celular Motorola" heigth="600">
                         <div class="card-body">
                             <h5 class="card-title">Motorola G-5 Plus</h5>
                             <p class="card-text">Procesador Snapdragon 625.</p>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/samsung-galaxy-s9-xxl.jpg" class="card-img-top" alt="Imagen Celular Samsumg"max-heigth="300">
+                        <img src="./assets/samsung-galaxy-s9-xxl.jpg" class="card-img-top" alt="Imagen Celular Samsumg" heigth="600">
                         <div class="card-body">
                             <h5 class="card-title">Samsumg Galaxy S9</h5>
                             <p class="card-text">Pantalla: 5.8", 1440 x 2960 pixels</p>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/u_10168742.jpg" class="card-img-top" alt="Imagen Celular Iphone"max-heigth="300">
+                        <img src="./assets/u_10168742.jpg" class="card-img-top" alt="Imagen Celular Iphone" heigth="600">
                         <div class="card-body">
                             <h5 class="card-title">Iphone 9</h5>
                             <p class="card-text">Sistema operativo IOS 13.4.</p>
