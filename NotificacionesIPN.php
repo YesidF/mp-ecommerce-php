@@ -55,6 +55,11 @@
     //Notificaciones Webhook
     if ($_POST){
         //echo var_dump($_POST['json']);
+        $archivo = fopen("datos.txt","w+b");
+        fwrite($archivo, "Estamos probando\r\n");
+        fflush($archivo);
+        fclose($archivo);
+        
         switch($_POST["type"]) {
             case "payment":
                 $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
