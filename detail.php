@@ -81,11 +81,11 @@
         <img src="./assets/music-audio-alp-201709" class="img-fluid" width="100%" height¨="auto" alt="Imagen Tienda e-comerce">
         <div class="container">
             <div class="row mt-3">
-                <!--<div class="d-grid gap-2 col-6 mx-auto">-->
+                <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-6 m-2">
-                                <img src='<?php echo $_POST['img']?>' alt="Imagen celular" class="img-thumbnail">
+                            <div class="col-md-6 mt-2 mr-2 mb-2">
+                                <img class="img-thumbnail" src='<?php echo $_POST['img']?>' alt="Imagen celular">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
@@ -93,12 +93,14 @@
                                     <p class="card-text"><span class="fw-bold">Cantidad:</span>&nbsp;<?php echo $_POST['unit']?></p>
                                     <p class="card-text"><span class="fw-bold">Precio:</span>&nbsp;$<?php echo $_POST['price']?></p>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
-                                    <a class="btn btn-primary" href="<?php echo $preference->init_point; ?>" role="button">Comprar con mercado libre</a>
+                                    <div class="text-center">
+                                        <a class="btn btn-primary btn-block" href="<?php echo $preference->init_point; ?>" role="button">Comprar con mercado libre</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                <!--</div>-->  
+                </div>  
             </div>
         </div>
     </body>
