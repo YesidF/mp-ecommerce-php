@@ -94,13 +94,20 @@
                                     <p class="card-text"><span class="fw-bold">Precio:</span>&nbsp;$<?php echo $_POST['price']?></p>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <div class="text-center">
-                                        <a class="btn btn-primary btn-block" href="<?php echo $preference->init_point; ?>" role="button">Comprar con mercado libre</a>
+                                        <a class="btn btn-primary btn-block" href="<?php echo $preference->init_point; ?>" role="button">pagar Compra</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>  
+            </div>
+            
+            <div class="row bg-dark">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p class="h6">© All right Reversed.</p>
+                </div>
+                <hr>
             </div>
         </div>
     </body>
@@ -121,7 +128,7 @@
                 id:'<?php echo $preference->id; ?>'
             },
             render: {
-                container: '.pagarMP' // Indica dónde se mostrará el botón de pago
+                container: '.mercadopago-button' // Indica dónde se mostrará el botón de pago
                 label: 'Pagar la compra', // Cambia el texto del botón de pago (opcional)
             }
         });
