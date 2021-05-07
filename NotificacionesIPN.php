@@ -13,7 +13,7 @@
     MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
     
     //Notificaciones IPN
-    if($_GET){
+    /*if($_GET){
         $merchant_order = null;
        
         switch($_GET["topic"]) {
@@ -27,7 +27,7 @@
                 break;
         }
 
-    /*
+    
         $paid_amount = 0;
         foreach ($merchant_order->payments as $payment) {      
             if ($payment->status == 'approved'){
@@ -48,12 +48,13 @@
         } else {
             print_r("Not paid yet. Do not release your item.");
         }
-    */
-    }
+   
+    }*/
     
+    http_response_code(200);
     //Notificaciones Webhook
     if ($_POST){
-        echo var_dump($_POST);
+        echo var_dump($_POST['json']);
         switch($_POST["type"]) {
             case "payment":
                 $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
@@ -69,4 +70,4 @@
                 break;
         }
     }    
-//http_response_code(200);
+http_response_code(200);
