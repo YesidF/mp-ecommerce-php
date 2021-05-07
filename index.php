@@ -15,14 +15,37 @@
     </head>
     <body class="as-theme-light-heroimage">
         <img src="./assets/music-audio-alp-201709" class="img-fluid" width="100%" height¨="auto" alt="Imagen Tienda e-comerce">
-        <div class="container">
+        <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/g6-2_2048x.jpg" class="card-img-top" alt="Imagen Celular LG-G6">
+                    <div class="card-body">
+                        <h5 class="card-title">LG G6</h5>
+                        <p class="card-text">Procesador: Qualcomm Snapdragon 821 con cuatro núcleos a 2.35 GHz.</p>
+                        <p class="card-text">GPU: Adreno 530.</p>
+                        <p class="card-text">Pantalla: 5.7 pulgadas de pantalla Quad HD+ 2880×1440 px.</p>
+                        <p class="card-text">Memoria: 4 GB de RAM.</p>
+                        <p class="card-text">Almacenamiento: 32/64 GB con microSD (hasta 2 TB).</p>
+                        <p class="card-text">Cámara Trasera: Dual cámara de 13 Mpx con gran angular de 125º</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="col">
                   <div class="card">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
                   </div>
                 </div>
