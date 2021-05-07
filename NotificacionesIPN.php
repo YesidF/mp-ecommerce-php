@@ -59,7 +59,7 @@
         fwrite($archivo, "Estamos probando\r\n");
         fflush($archivo);
         fclose($archivo);
-        
+        echo 'Donde lo creo';
         switch($_POST["type"]) {
             case "payment":
                 $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
