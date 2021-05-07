@@ -54,7 +54,7 @@
     http_response_code(200);
     //Notificaciones Webhook
     if ($_POST){
-        echo var_dump($_POST['json']);
+        //echo var_dump($_POST['json']);
         switch($_POST["type"]) {
             case "payment":
                 $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
@@ -70,4 +70,4 @@
                 break;
         }
     }    
-http_response_code(200);
+
