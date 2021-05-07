@@ -140,6 +140,13 @@
                 </div>
             </div>
         </div>
+        
+        <div class="row bg-dark">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p class="h6">© All right Reversed.</p>
+            </div>
+        </div>
+        
         <script src="https://sdk.mercadopago.com/js/v2"></script>
         <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
