@@ -14,6 +14,7 @@
         
     </head>
     <body class="as-theme-light-heroimage">
+        <img src="./assets/music-audio-alp-201709" class="img-fluid" width="100%" height¨="auto" alt="Imagen Tienda e-comerce">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
