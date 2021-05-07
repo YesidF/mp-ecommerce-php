@@ -55,7 +55,7 @@
     //Notificaciones Webhook
     if ($_POST){
         //echo var_dump($_POST['json']);
-        $archivo = fopen("datos.txt","w+b");
+        $archivo = fopen("datos.txt","w");
         fwrite($archivo, "Estamos probando\r\n");
         fflush($archivo);
         fclose($archivo);
