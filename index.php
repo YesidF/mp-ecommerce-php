@@ -28,15 +28,15 @@
                             <p class="card-text">Memoria: 4 GB de RAM.</p>
                             <p class="card-text">Almacenamiento: 32/64 GB con microSD (hasta 2 TB).</p>
                             <p class="card-text">Cámara Trasera: Dual cámara de 13 Mpx con gran angular de 125º</p>
-                        </div>  
-                    </div>
-                    <form action="/detail.php" method="get">
-                        <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/g6-2_2048x.jpg">
-                        <input type="hidden" name="title" value="LG G6">
-                        <input type="hidden" name="price" value="13000">
-                        <input type="hidden" name="unit" value="1">
-                        <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
-                    </form>
+                        </div>
+                        <form action="/detail.php" method="get">
+                            <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/g6-2_2048x.jpg">
+                            <input type="hidden" name="title" value="LG G6">
+                            <input type="hidden" name="price" value="13000">
+                            <input type="hidden" name="unit" value="1">
+                            <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
+                        </form>
+                    </div>                   
                 </div>
                 <div class="col">
                     <div class="card">
@@ -49,14 +49,14 @@
                             <p class="card-text">Contraste de 1.400:1 (típico)</p>
                             <p class="card-text">Pantalla True Tone.</p>
                         </div>
-                    </div>
-                    <form action="/detail.php" method="get">
-                        <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/iphone.png">
-                        <input type="hidden" name="title" value="Iphone 8">
-                        <input type="hidden" name="price" value="30000">
-                        <input type="hidden" name="unit" value="1">
-                        <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
-                    </form>
+                        <form action="/detail.php" method="get">
+                            <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/iphone.png">
+                            <input type="hidden" name="title" value="Iphone 8">
+                            <input type="hidden" name="price" value="30000">
+                            <input type="hidden" name="unit" value="1">
+                            <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
+                        </form>
+                    </div>             
                 </div>
                 <div class="col">
                     <div class="card">
@@ -69,14 +69,14 @@
                             <p class="card-text">Almacenamiento: 16GB.</p>
                             <p class="card-text">Expansión: microSD.</p>
                         </div>
+                        <form action="/detail.php" method="get">
+                            <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/motorola-moto-g4-3.jpg">
+                            <input type="hidden" name="title" value="Motorola G4">
+                            <input type="hidden" name="price" value="20000">
+                            <input type="hidden" name="unit" value="1">
+                            <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
+                        </form>
                     </div>
-                    <form action="/detail.php" method="get">
-                        <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/motorola-moto-g4-3.jpg">
-                        <input type="hidden" name="title" value="Motorola G4">
-                        <input type="hidden" name="price" value="20000">
-                        <input type="hidden" name="unit" value="1">
-                        <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
-                    </form>
                 </div>
                 <div class="col">
                     <div class="card">
@@ -89,14 +89,14 @@
                             <p class="card-text">32 GB de memoria rom.</p>
                             <p class="card-text">Memoria Ram de 2 GB.</p>
                         </div>
+                        <form action="/detail.php" method="get">
+                            <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/motorola-moto-g5-plus-1.jpg">
+                            <input type="hidden" name="title" value="Motorola G-5 Plus">
+                            <input type="hidden" name="price" value="15000">
+                            <input type="hidden" name="unit" value="1">
+                            <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
+                        </form>
                     </div>
-                    <form action="/detail.php" method="get">
-                        <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/motorola-moto-g5-plus-1.jpg">
-                        <input type="hidden" name="title" value="Motorola G-5 Plus">
-                        <input type="hidden" name="price" value="15000">
-                        <input type="hidden" name="unit" value="1">
-                        <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
-                    </form>
                 </div>
                 <div class="col">
                     <div class="card">
@@ -109,14 +109,14 @@
                             <p class="card-text">Cámara: 12 MP</p>
                             <p class="card-text">Almacenamiento: 64GB/128GB</p>
                         </div>
+                        <form action="/detail.php" method="get">
+                            <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/samsung-galaxy-s9-xxl.jpg">
+                            <input type="hidden" name="title" value="Samsumg Galaxy S9">
+                            <input type="hidden" name="price" value="18000">
+                            <input type="hidden" name="unit" value="1">
+                            <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
+                        </form>
                     </div>
-                    <form action="/detail.php" method="get">
-                        <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/samsung-galaxy-s9-xxl.jpg">
-                        <input type="hidden" name="title" value="Samsumg Galaxy S9">
-                        <input type="hidden" name="price" value="18000">
-                        <input type="hidden" name="unit" value="1">
-                        <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
-                    </form>
                 </div>
                 <div class="col">
                     <div class="card">
@@ -129,14 +129,14 @@
                             <p class="card-text">El espacio interior 64/128/256 GB.</p>
                             <p class="card-text">Cámara 12 MP.</p>
                         </div>
+                        <form action="/detail.php" method="get">
+                            <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/u_10168742.jpg">
+                            <input type="hidden" name="title" value="Iphone 9">
+                            <input type="hidden" name="price" value="35000">
+                            <input type="hidden" name="unit" value="1">
+                            <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
+                        </form>
                     </div>
-                    <form action="/detail.php" method="get">
-                        <input type="hidden" name="img" value="https://dyfe2008-mp-commerce-php.herokuapp.com/assets/u_10168742.jpg">
-                        <input type="hidden" name="title" value="Iphone 9">
-                        <input type="hidden" name="price" value="35000">
-                        <input type="hidden" name="unit" value="1">
-                        <button type="submit" class="btn btn-primary mb-3 mercadopago-button" formmethod="post">Comprar</button>
-                    </form>
                 </div>
             </div>
         </div>
